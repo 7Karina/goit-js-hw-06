@@ -8,7 +8,7 @@ login.addEventListener("submit", function (e) {
   const userData = {};
 
   formData.forEach((value, key) => {
-    userData[key] = value;
+    userData[key] = value.trim();
   });
 
   if (!userData.email || !userData.password) {
@@ -16,5 +16,5 @@ login.addEventListener("submit", function (e) {
   }
 
   console.log(userData);
-  login.reset();
+  currentTarget.reset();
 });
