@@ -16,5 +16,5 @@ login.addEventListener("submit", function (e) {
   }
 
   console.log(userData);
-  currentTarget.reset();
+  e.currentTarget.reset();
 });
